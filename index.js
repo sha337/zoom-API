@@ -100,7 +100,7 @@ app.get('/newmeeting', (req, res) => {
     // console.log(access_token);
     var options = {
         method: 'POST',
-        url: 'https://api.zoom.us/v2/users/shabbaralee@gmail.com/meetings',
+        url: 'https://api.zoom.us/v2/users/{place-your-registered-email-or-userid}/meetings',
         headers: {
             'content-type': 'application/json',
             authorization: 'Bearer ' + access_token
